@@ -54,7 +54,8 @@ function OpenMenu()
 		{label = "Buy 1 Token", value = 'buy_one'},
 		{label = "Buy 10 Tokens", value = 'buy_ten'},
 		{label = "Buy 100 Tokens", value = 'buy_one_hundred'},
-		{label = "Sell All Token", value = 'sell_all'},
+		{label = "Buy 1000 Tokens", value = 'buy_one_thousand'},
+		{label = "Sell All Tokens", value = 'sell_all'},
 		{label = "Sell 1 Token", value = 'sell_one'},
 		{label = "Sell 10 Tokens", value = 'sell_ten'},
 		{label = "Sell 100 Tokens", value = 'sell_one_hundred'}
@@ -73,6 +74,8 @@ function OpenMenu()
 			TriggerServerEvent('esx_CasinoTokenShop:BuyTokens', 10)
 		elseif data.current.value == "buy_one_hundred" then
 			TriggerServerEvent('esx_CasinoTokenShop:BuyTokens', 100)
+		elseif data.current.value == "buy_one_thousand" then
+			TriggerServerEvent('esx_CasinoTokenShop:BuyTokens', 1000)
 		end
 
 		-- Sell Tokens
