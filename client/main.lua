@@ -51,10 +51,10 @@ function OpenMenu()
 	ESX.UI.Menu.CloseAll()
 
 	local options = {
-		{label = "Buy 1 Token", value = 'buy_one'},
-		{label = "Buy 10 Tokens", value = 'buy_ten'},
-		{label = "Buy 100 Tokens", value = 'buy_one_hundred'},
-		{label = "Buy 1000 Tokens", value = 'buy_one_thousand'},
+		{label = "Buy 1 Token ($" .. Config.TokenPurchasePrice * 1 .. ")", value = 'buy_one'},
+		{label = "Buy 10 Tokens ($" .. Config.TokenPurchasePrice * 10 .. ")", value = 'buy_ten'},
+		{label = "Buy 100 Tokens ($" .. Config.TokenPurchasePrice * 100 .. ")", value = 'buy_one_hundred'},
+		{label = "Buy 1000 Tokens ($" .. Config.TokenPurchasePrice * 1000 .. ")", value = 'buy_one_thousand'},
 		{label = "Sell All Tokens", value = 'sell_all'},
 		{label = "Sell 1 Token", value = 'sell_one'},
 		{label = "Sell 10 Tokens", value = 'sell_ten'},
